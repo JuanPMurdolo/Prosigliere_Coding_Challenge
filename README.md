@@ -24,8 +24,50 @@ post.
 
 
 Challenge Submission
-Please send an email to the hiring manager including a Github link to the code you created at your
-earliest convenience. Bear in mind that the code should be production ready but it's ok to not
-complete it in full. Please don't dedicate more than 4 hours to work on this project.
-Please add a README with instructions to run it, and what would be your next steps if you had more
-time available.
+Please send an email to the hiring manager including a Github link to the code you created at your earliest convenience. Bear in mind that the code should be production ready but it's ok to not complete it in full. Please don't dedicate more than 4 hours to work on this project.
+Please add a README with instructions to run it, and what would be your next steps if you had more time available.
+
+# Prosigliere Coding Challenge
+
+This project is a RESTful API built with Django and Django REST Framework for managing blog posts and comments.
+
+---
+
+## Tech Stack
+
+- Python 3.x  
+- Django 4.x  
+- Django REST Framework
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+
+git clone https://github.com/your_username/prosigliere_blog_api.git
+cd prosigliere_blog_api
+
+### 2. Create and activate a virtual environment
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+### 4. Apply migrations and run the server
+
+python manage.py migrate
+python manage.py runserver
+
+# API Endpoints
+GET - /api/posts - List all blog posts with the number of comments
+POST - /api/posts - Create a new blog post (title, content)
+GET - /api/posts/<id> - Get a post's title, content, and its comments
+POST - /api/posts/<id>/comments	- Add a comment (content) to a specific blog post
+
+
+
