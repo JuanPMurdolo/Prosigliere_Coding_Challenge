@@ -76,7 +76,7 @@ GET - /api/posts/<id> - Get a post's title, content, and its comments
 POST - /api/posts/<id>/comments	- Add a comment (content) to a specific blog post
 
 # Postman
-Shared there is a postman .JSON file Prosigliere_Backend.postman_collection.json, that has a set of the endpoints testing
+Shared in the repo there is a postman .JSON file "Prosigliere_Backend.postman_collection.json", that has a localhost endpoints requests already prepared.
 
 
 
