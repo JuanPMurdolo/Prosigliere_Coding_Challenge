@@ -63,6 +63,7 @@ pip install -r requirements.txt
 ### 4. Apply migrations and run the server
 
 python manage.py migrate
+
 python manage.py runserver
 
 # API Endpoints
