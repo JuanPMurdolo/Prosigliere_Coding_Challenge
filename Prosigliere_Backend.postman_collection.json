@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "4d7649a8-8766-4a55-a99b-0aac8e220830",
+		"name": "Prosigliere_Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15670490"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Testing\",\r\n  \"content\": \"Testing Content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  a Single Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create  a Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"content\": \"Testing Content\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts/1/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
