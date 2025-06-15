@@ -68,8 +68,11 @@ python manage.py runserver
 
 # API Endpoints
 GET - /api/posts - List all blog posts with the number of comments
+
 POST - /api/posts - Create a new blog post (title, content)
+
 GET - /api/posts/<id> - Get a post's title, content, and its comments
+
 POST - /api/posts/<id>/comments	- Add a comment (content) to a specific blog post
 
 # Postman
