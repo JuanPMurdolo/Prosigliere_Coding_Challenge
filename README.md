@@ -31,6 +31,7 @@ Please add a README with instructions to run it, and what would be your next ste
 
 This project is a RESTful API built with Django and Django REST Framework for managing blog posts and comments.
 This project is really similar to a project I have in my GH, https://github.com/JuanPMurdolo/Coding_Challenge_PF, this project is similar in everything except that I used Flask in the other one.
+I used the django-admin startproject tool.
 
 ---
 
